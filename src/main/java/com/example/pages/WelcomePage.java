@@ -2,8 +2,6 @@ package com.example.pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class WelcomePage extends BasePage {
@@ -13,6 +11,7 @@ public class WelcomePage extends BasePage {
 
     public WelcomePage(AndroidDriver driver) {
         super(driver);
+
     }
 
     public void clickCreateNewWalletButton() {

@@ -17,8 +17,6 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-import static java.lang.Thread.sleep;
-
 public class AppiumTest {
     public AndroidDriver driver;
     private ExtentReports extent;
@@ -52,7 +50,7 @@ public class AppiumTest {
     }
 
     @AfterTest
-    public void tearDown() throws InterruptedException {
+    public void tearDown() {
         System.out.println("Test finished.");
         extent.flush();
     }
@@ -89,6 +87,7 @@ public class AppiumTest {
             test.pass("Rename wallet successful");
         } catch (Exception e) {
             test.fail(e.getMessage());
+
         }
 
     }

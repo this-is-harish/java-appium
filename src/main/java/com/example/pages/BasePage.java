@@ -12,6 +12,7 @@ public class BasePage {
     protected AndroidDriver driver;
     protected WebDriverWait wait;
 
+
     public BasePage(AndroidDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));

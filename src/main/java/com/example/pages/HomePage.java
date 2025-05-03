@@ -13,6 +13,7 @@ public class HomePage extends BasePage {
     private final By confirmDeleteButton = By.xpath("//android.widget.TextView[@text=\"Delete\"]");
     private final By proceedAnyWayButton = By.xpath("//android.widget.TextView[@resource-id=\"secondaryAction\"]");
 
+
     public HomePage(AndroidDriver driver) {
         super(driver);
     }
